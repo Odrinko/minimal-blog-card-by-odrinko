@@ -1,0 +1,85 @@
+//colors 
+$color-primary: #883AE1;
+$color-secondary: #E6D6FC;
+$color-background: #E5EAF0;
+$color-light: #FAFAF9;
+$color-white: #FFFFFF;
+$color-dark: #20293A;
+$color-gray: #6C727F;
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'Sora', sans-serif;
+  } 
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  body{
+    background-color: $color-light;
+  }
+
+  #app{
+    width: 99vw;
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card-container{
+    background-color: $color-white;
+    display: flex;
+    flex-direction: column;
+    width: 36.8rem;
+    padding: 1.6rem;
+    border-radius: 1rem;
+    .content-img{
+        width: 33rem;
+        height: 15rem;
+        margin-bottom: 1.6rem;
+        border-radius: 1rem;
+    }
+    .content-container{
+        display: flex;
+        flex-direction: column;
+        .content-adjust-size{
+            display: flex;
+            width: auto;
+        }
+        .content-type{
+            background-color: $color-secondary;
+            color: $color-primary;
+            padding: .6rem 1.6rem;
+            border-radius: 1.5rem;
+            font-weight: 700;
+            font-size: 1rem;
+        }
+        .content-title{
+            margin-bottom: 0;
+            font-size: 2rem;
+        }
+
+        .content{
+            color: $color-gray;
+            font-size: 1.5rem;
+        }
+
+    }
+    
+    hr{
+        width: 100%;
+        color: $color-background;
+        display: block;
+    }
+
+    .content-author{
+        color: $color-gray;
+        margin-bottom: 0;
+    }
+ 
+  }
+
+
+  
